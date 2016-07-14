@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21542e7949d5b3345a9635b8c456dd88, type: 3}
+  m_Name: NewScreenData
+  m_EditorClassIdentifier: 
+  currChapter:
+    chapterImage: {fileID: 0}
+    chapNum: 0
+    chapObj: {fileID: 0}
+    dir: 00000000
+  chapterInfo:
+  - chapterImage: {fileID: 21300000, guid: 4ab8a2907ea3d9343a451762de6272af, type: 3}
+    chapNum: 0
+    chapObj: {fileID: 111248, guid: 301be16cffed019429d9db064470e122, type: 2}
+    dir: 00000000
+  - chapterImage: {fileID: 21300000, guid: bc36465d594233543a7a841424362a18, type: 3}
+    chapNum: 1
+    chapObj: {fileID: 111248, guid: 301be16cffed019429d9db064470e122, type: 2}
+    dir: 00000000
+  - chapterImage: {fileID: 0}
+    chapNum: 2
+    chapObj: {fileID: 111248, guid: 301be16cffed019429d9db064470e122, type: 2}
+    dir: 00000000
+  - chapterImage: {fileID: 0}
+    chapNum: 3
+    chapObj: {fileID: 111248, guid: 301be16cffed019429d9db064470e122, type: 2}
+    dir: 00000000
+  - chapterImage: {fileID: 0}
+    chapNum: 4
+    chapObj: {fileID: 111248, guid: 301be16cffed019429d9db064470e122, type: 2}
+    dir: 00000000
+  - chapterImage: {fileID: 0}
+    chapNum: 5
+    chapObj: {fileID: 111248, guid: 301be16cffed019429d9db064470e122, type: 2}
+    dir: 00000000
+  - chapterImage: {fileID: 0}
+    chapNum: 6
+    chapObj: {fileID: 111248, guid: 301be16cffed019429d9db064470e122, type: 2}
+    dir: 00000000
+  - chapterImage: {fileID: 0}
+    chapNum: 7
+    chapObj: {fileID: 111248, guid: 301be16cffed019429d9db064470e122, type: 2}
+    dir: 00000000
+  - chapterImage: {fileID: 0}
+    chapNum: 8
+    chapObj: {fileID: 111248, guid: 301be16cffed019429d9db064470e122, type: 2}
+    dir: 00000000
