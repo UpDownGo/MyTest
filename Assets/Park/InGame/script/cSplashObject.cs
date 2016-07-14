@@ -14,14 +14,14 @@ public class cSplashObject : MonoBehaviour {
     // 파티클
     public GameObject m_prfSplashParticle;
 
-    
+
     ////////////////////////////////////////////////////////////////////
     /// <summary>
     /// Awake() 초기화용 변수
     /// 단순 인터페이스 역할만
     /// </summary>
     // 돈/히트
-    private int m_iMoneyPerHit = GameDataManager.Instance.userData.hitPoint[0];
+    private int m_iMoneyPerHit;// = GameDataManager.Instance.userData.hitPoint[0];
 
 	// Use this for initialization
 	void Awake () {
