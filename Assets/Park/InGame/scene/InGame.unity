@@ -1572,7 +1572,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: MainCanvas
         m_Mode: 1
         m_Arguments:
@@ -14453,7 +14453,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: OnShakeCanvas
         m_Mode: 1
         m_Arguments:
@@ -17469,6 +17469,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f0d22cfbcf2d7c4496ef7dd966867c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &855184868 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11443486, guid: 048742f53c89cab47a1c706861a3a229,
+    type: 2}
+  m_PrefabInternal: {fileID: 1757705741}
+  m_Script: {fileID: 11500000, guid: e70c65f49a9e0174ba3347654311ecb7, type: 3}
 --- !u!1 &856348432
 GameObject:
   m_ObjectHideFlags: 0
@@ -18542,7 +18548,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: OnBallUpCanvas
         m_Mode: 1
         m_Arguments:
@@ -18667,7 +18673,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: OnMarryCanvas
         m_Mode: 1
         m_Arguments:
@@ -20858,7 +20864,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: OnLotteryCanvas
         m_Mode: 1
         m_Arguments:
@@ -30154,7 +30160,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: OnItemCanvas
         m_Mode: 1
         m_Arguments:
