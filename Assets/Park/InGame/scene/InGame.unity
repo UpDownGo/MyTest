@@ -184,7 +184,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 659237966}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000030517578, y: -0.000015258789}
@@ -302,7 +302,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -579,7 +579,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -905,7 +905,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -984,7 +984,7 @@ RectTransform:
   - {fileID: 633608319}
   - {fileID: 642204043}
   m_Father: {fileID: 659237966}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1322,7 +1322,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -1447,7 +1447,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: OffBasic
         m_Mode: 2
         m_Arguments:
@@ -2071,7 +2071,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184865}
         m_MethodName: MoveEast
         m_Mode: 1
         m_Arguments:
@@ -2258,7 +2258,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -2891,7 +2891,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -3268,7 +3268,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -3393,7 +3393,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -3878,7 +3878,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -4003,7 +4003,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: TryBuyCoin
         m_Mode: 2
         m_Arguments:
@@ -4219,7 +4219,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -4511,7 +4511,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetChapProduct
         m_Mode: 2
         m_Arguments:
@@ -4670,7 +4670,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -4796,7 +4796,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: BallUp
         m_Mode: 3
         m_Arguments:
@@ -5026,7 +5026,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -5221,7 +5221,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -5416,7 +5416,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -5687,7 +5687,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -5812,7 +5812,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -6733,7 +6733,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -6973,7 +6973,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -7314,7 +7314,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetChapProduct
         m_Mode: 2
         m_Arguments:
@@ -7530,7 +7530,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -7770,7 +7770,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -7971,7 +7971,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -8166,7 +8166,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -8399,7 +8399,7 @@ RectTransform:
   - {fileID: 1427529311}
   - {fileID: 1045557986}
   m_Father: {fileID: 659237966}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -9313,7 +9313,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetChapProduct
         m_Mode: 2
         m_Arguments:
@@ -9438,7 +9438,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -9663,7 +9663,7 @@ RectTransform:
   - {fileID: 1613859826}
   - {fileID: 1765494139}
   m_Father: {fileID: 659237966}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -9927,7 +9927,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -10052,7 +10052,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -10177,7 +10177,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -10302,7 +10302,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -10427,7 +10427,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -10552,7 +10552,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -10677,7 +10677,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -11101,7 +11101,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetChapProduct
         m_Mode: 2
         m_Arguments:
@@ -11226,7 +11226,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: OffBasic
         m_Mode: 2
         m_Arguments:
@@ -11522,7 +11522,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -11647,7 +11647,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -11872,7 +11872,7 @@ RectTransform:
   - {fileID: 118320644}
   - {fileID: 714352850}
   m_Father: {fileID: 659237966}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000030517578, y: -0.000015258789}
@@ -12082,7 +12082,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 2101255990}
   - {fileID: 1513934390}
   - {fileID: 647002365}
   - {fileID: 3367086}
@@ -12269,7 +12268,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -13009,7 +13008,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -13599,7 +13598,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: OffBasic
         m_Mode: 2
         m_Arguments:
@@ -13661,7 +13660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &715995743
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13896,7 +13895,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -14578,7 +14577,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -14773,7 +14772,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -14975,7 +14974,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: BallUp
         m_Mode: 3
         m_Arguments:
@@ -15100,7 +15099,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -15225,7 +15224,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -15569,7 +15568,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -15770,7 +15769,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -15895,7 +15894,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -16087,7 +16086,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -16212,7 +16211,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -16550,7 +16549,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -16675,7 +16674,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -16946,7 +16945,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetChapProduct
         m_Mode: 2
         m_Arguments:
@@ -17323,7 +17322,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -17469,6 +17468,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f0d22cfbcf2d7c4496ef7dd966867c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &855184865 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11413068, guid: 048742f53c89cab47a1c706861a3a229,
+    type: 2}
+  m_PrefabInternal: {fileID: 1757705741}
+  m_Script: {fileID: 11500000, guid: 0249e9492dbe6f146b4cc48afd2c46bc, type: 3}
+--- !u!114 &855184867 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11446858, guid: 048742f53c89cab47a1c706861a3a229,
+    type: 2}
+  m_PrefabInternal: {fileID: 1757705741}
+  m_Script: {fileID: 11500000, guid: ad179bde80f48da4891ea13a3e37ac02, type: 3}
 --- !u!114 &855184868 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11443486, guid: 048742f53c89cab47a1c706861a3a229,
@@ -17622,7 +17633,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -17823,7 +17834,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -17948,7 +17959,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: TryBuyCoin
         m_Mode: 2
         m_Arguments:
@@ -18228,7 +18239,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -18353,7 +18364,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184865}
         m_MethodName: MoveWest
         m_Mode: 1
         m_Arguments:
@@ -18798,7 +18809,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -19000,7 +19011,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: BallUp
         m_Mode: 3
         m_Arguments:
@@ -19223,7 +19234,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -19348,7 +19359,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: OffBasic
         m_Mode: 2
         m_Arguments:
@@ -19543,7 +19554,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -19814,7 +19825,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -20154,7 +20165,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -20280,7 +20291,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: BallUp
         m_Mode: 3
         m_Arguments:
@@ -21065,7 +21076,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: OffBasic
         m_Mode: 2
         m_Arguments:
@@ -21190,7 +21201,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -21525,7 +21536,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -21650,7 +21661,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -21775,7 +21786,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -21900,7 +21911,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -22510,7 +22521,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -22715,7 +22726,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -23028,7 +23039,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -23153,7 +23164,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -23553,7 +23564,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -23678,7 +23689,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -23942,7 +23953,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -24067,7 +24078,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -24192,7 +24203,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -24387,7 +24398,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetChapProduct
         m_Mode: 2
         m_Arguments:
@@ -24512,7 +24523,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -25001,7 +25012,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -25162,7 +25173,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 111248, guid: 301be16cffed019429d9db064470e122, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11480630, guid: 301be16cffed019429d9db064470e122, type: 2}
       propertyPath: m_Enabled
@@ -25322,7 +25333,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: TryBuyCoin
         m_Mode: 2
         m_Arguments:
@@ -25489,7 +25500,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -25568,7 +25579,7 @@ RectTransform:
   - {fileID: 91729166}
   - {fileID: 1905241652}
   m_Father: {fileID: 659237966}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000030517578, y: -0.000015258789}
@@ -25762,7 +25773,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetChapProduct
         m_Mode: 2
         m_Arguments:
@@ -26169,7 +26180,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184865}
         m_MethodName: MoveSouth
         m_Mode: 1
         m_Arguments:
@@ -26455,7 +26466,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -27026,7 +27037,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -27417,7 +27428,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: OffBasic
         m_Mode: 2
         m_Arguments:
@@ -28045,7 +28056,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: TryBuyDia
         m_Mode: 2
         m_Arguments:
@@ -28170,7 +28181,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -28365,7 +28376,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -28947,7 +28958,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -29446,7 +29457,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -29680,7 +29691,7 @@ RectTransform:
   - {fileID: 1527371981}
   - {fileID: 1331272819}
   m_Father: {fileID: 659237966}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -29840,7 +29851,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -29965,7 +29976,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184865}
         m_MethodName: MoveNorth
         m_Mode: 1
         m_Arguments:
@@ -30239,7 +30250,7 @@ RectTransform:
   - {fileID: 1407682033}
   - {fileID: 978139064}
   m_Father: {fileID: 659237966}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000030517578, y: -0.000015258789}
@@ -30427,7 +30438,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -30552,7 +30563,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -31000,7 +31011,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: TryBuyDia
         m_Mode: 2
         m_Arguments:
@@ -31413,7 +31424,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -31538,7 +31549,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -31733,7 +31744,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -32803,7 +32814,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -34017,7 +34028,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -34142,7 +34153,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184868}
         m_MethodName: OffBasic
         m_Mode: 2
         m_Arguments:
@@ -34267,7 +34278,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -34392,7 +34403,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -34587,7 +34598,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -34670,7 +34681,7 @@ RectTransform:
   - {fileID: 2033327005}
   - {fileID: 941864319}
   m_Father: {fileID: 659237966}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -34858,7 +34869,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -35345,7 +35356,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -35610,7 +35621,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -35951,7 +35962,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -36514,7 +36525,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -36639,7 +36650,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -36896,7 +36907,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -37021,7 +37032,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetChapProduct
         m_Mode: 2
         m_Arguments:
@@ -37548,7 +37559,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -37883,7 +37894,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetChapProduct
         m_Mode: 2
         m_Arguments:
@@ -38440,7 +38451,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -38641,7 +38652,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: TryBuyDia
         m_Mode: 2
         m_Arguments:
@@ -38766,7 +38777,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -39001,7 +39012,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -39389,7 +39400,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -39514,7 +39525,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -39639,7 +39650,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetStageProduct
         m_Mode: 2
         m_Arguments:
@@ -39919,7 +39930,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -40184,7 +40195,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -40309,7 +40320,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -40504,7 +40515,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 855184867}
         m_MethodName: SetItemProduct
         m_Mode: 2
         m_Arguments:
@@ -40586,76 +40597,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 152}
   m_Pivot: {x: 0, y: 1}
---- !u!1 &2101255989
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 144342, guid: 24783780c20ae734e96450ea98869110, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 2101255990}
-  - 222: {fileID: 2101255992}
-  - 114: {fileID: 2101255991}
-  m_Layer: 5
-  m_Name: BG
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2101255990
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 22437244, guid: 24783780c20ae734e96450ea98869110,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2101255989}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 659237966}
-  m_RootOrder: 0
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1080, y: 1080}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2101255991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11472236, guid: 24783780c20ae734e96450ea98869110,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2101255989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &2101255992
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 22289130, guid: 24783780c20ae734e96450ea98869110,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2101255989}
 --- !u!1 &2103505712
 GameObject:
   m_ObjectHideFlags: 0
