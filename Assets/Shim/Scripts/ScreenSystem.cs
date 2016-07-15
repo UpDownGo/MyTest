@@ -115,6 +115,7 @@ public class ScreenSystem : MonoBehaviour {
 
     void ScreenInit()
     {
+        /*
         for (int i = 0; i < 9; i++)
         {
             int j = i * 9;
@@ -129,6 +130,7 @@ public class ScreenSystem : MonoBehaviour {
             screendata.chapterInfo[i].chapObj.transform.FindChild("Item (8)").GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j + 8];
 
         }
+        */
     }
 
     void SetScreen(ScreenInfo currScreen)
