@@ -99,13 +99,9 @@ public class GameDataManager : MonoBehaviour {
 
         if (!unlockSystem)
         {
-            unlockSystem = gameObject.GetComponent < UnlockSystem >();
+            unlockSystem = gameObject.GetComponent<UnlockSystem>();
         }
 
-        if (!screenSystem)
-        {
-            screenSystem = gameObject.GetComponent<ScreenSystem>();
-        }
 
     }
 
