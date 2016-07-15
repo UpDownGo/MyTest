@@ -97,7 +97,7 @@ public class cSplashObject : MonoBehaviour {
             sum = m_iMoneyPerHit + _other.gameObject.GetComponent<cSplashObject>().GetMoneyPerHit();
             sum /= 2;
         }
-        else// if (_other.gameObject.tag == "face") // 벽이라면        
+        else if (_other.gameObject.tag == "face") // 벽이라면        
             sum = m_iMoneyPerHit;
 
 

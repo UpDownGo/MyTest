@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11401556}
   m_Layer: 0
   m_Name: Object_splashObject_0
-  m_TagString: ball
+  m_TagString: splash object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
