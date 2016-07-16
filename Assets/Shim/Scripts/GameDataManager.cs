@@ -55,7 +55,7 @@ public class GameDataManager : MonoBehaviour {
 
     //  시스템
     UnlockSystem unlockSystem;
-    ScreenSystem screenSystem;
+    public ScreenSystem screenSystem;
     SaveAndLoad saveAndLoad;
 
     // 싱글톤 구현
