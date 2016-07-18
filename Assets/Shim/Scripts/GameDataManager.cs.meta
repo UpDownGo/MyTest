@@ -1,10 +1,28 @@
 fileFormatVersion: 2
 guid: ad179bde80f48da4891ea13a3e37ac02
-timeCreated: 1468344549
+timeCreated: 1468861990
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - itemData: {fileID: 11400000, guid: 38ece9be7f6823a43bb5593623719777, type: 2}
+  - userData: {fileID: 11400000, guid: 275c756f9e644ab45bd2750f678af336, type: 2}
+  - lockSprite: {instanceID: 0}
+  - unlockSprite: {instanceID: 0}
+  - coinText: {instanceID: 0}
+  - diaText: {instanceID: 0}
+  - itemStore: {instanceID: 0}
+  - itemBuyImage: {instanceID: 0}
+  - itemBuyPrice: {instanceID: 0}
+  - itemBuyScenario: {instanceID: 0}
+  - stageStore: {instanceID: 0}
+  - stageBuyPrice: {instanceID: 0}
+  - stageBuyTitle: {instanceID: 0}
+  - chapStore: {instanceID: 0}
+  - chapBuyTitle: {instanceID: 0}
+  - chapBuyScenario: {instanceID: 0}
+  - chapBuyPrice: {instanceID: 0}
+  - screenSystem: {instanceID: 0}
   executionOrder: 200
   icon: {instanceID: 0}
   userData: 

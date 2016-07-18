@@ -9,6 +9,7 @@ public class ScreenSystem : MonoBehaviour {
     public GameObject[] moveButton;
     public DataScreem screendata;
 
+    int currentPage;
 
     GameObject[] objChapter = new GameObject[9];
     Image[] itemImage = new Image[9];
@@ -91,6 +92,17 @@ public class ScreenSystem : MonoBehaviour {
     // 챕터 Obj 생성
     void InitChapterOBJ()
     {
+
+        for(int i = 0; i < 9; i++)
+        {
+            objChapter[i] = Instantiate(screendata.chapterInfo[i].chapObj);
+            objChapter[i].transform.SetParent(superChapter.transform);
+            objChapter[i].GetComponent<RectTransform>().localPosition = new Vector3(0f, 0f, 0f);
+            objChapter[i].GetComponent<RectTransform>().localScale = new Vector3(1f, 1f, 1f);
+        }
+
+
+       /*
         objChapter[0] = superChapter.transform.FindChild("Chapter01").gameObject;
         objChapter[1] = superChapter.transform.FindChild("Chapter02").gameObject;
         objChapter[2] = superChapter.transform.FindChild("Chapter03").gameObject;
@@ -100,7 +112,10 @@ public class ScreenSystem : MonoBehaviour {
         objChapter[6] = superChapter.transform.FindChild("Chapter07").gameObject;
         objChapter[7] = superChapter.transform.FindChild("Chapter08").gameObject;
         objChapter[8] = superChapter.transform.FindChild("Chapter09").gameObject;
+
+        */
     }
+
 
     // 챕터 아이템 이미지 데이터 입력
     void InitItemImage()
@@ -137,28 +152,16 @@ public class ScreenSystem : MonoBehaviour {
     {
         
         // 스크린 설정
-        currChapter = screendata.chapterInfo[0];
-
-        SetScreen(currChapter);
-
+        currChapter = screendata.chapterInfo[0];        
         
         // 스크린 방항 정보 셋팅
         for (int i = 0; i < 9; i++)
         {
             if (GameDataManager.Instance.userData.chapIsBuy[i])            
-                WhenBuyChapter(i);
-
-            /*
-            else  // 구입 하지 않은 것들은 전부 닫는다.
-            {
-                screendata.chapterInfo[i].dir[0] = false;
-                screendata.chapterInfo[i].dir[1] = false;
-                screendata.chapterInfo[i].dir[2] = false;
-                screendata.chapterInfo[i].dir[3] = false;
-            }    
-            */        
+                WhenBuyChapter(i);                    
         }
-        
+
+        SetScreen(currChapter);
     }
 
     public void HomeScreen()
@@ -174,55 +177,34 @@ public class ScreenSystem : MonoBehaviour {
     void SetScreen(ScreenInfo screenInfo)
     {
         // 메인 스테이지 엑티브
+
         for (int i = 0; i < objChapter.Length; i++)
         {
-            if (i == screenInfo.chapNum)
+            if (screendata.chapterInfo[i].chapObj == screenInfo.chapObj)
             {
                 objChapter[i].SetActive(true);
-                print("t");
+                print("t :" + i);
+                currentPage = i;
             }
 
             else
             {
                 objChapter[i].SetActive(false);
-                print("f");
-
+                print("f :" + i);
 
             }
         }
 
-        // 구입 여부에 따른 아이템 엑티브
-        int itemIndex = screenInfo.chapNum * 9;
-        int chapNum = screenInfo.chapNum;
+        ItemUpdate();
 
-        // 아이템 관리
-        itemImage[0] = objChapter[chapNum].transform.FindChild("Item").gameObject.GetComponent<Image>();
-        itemImage[1] = objChapter[chapNum].transform.FindChild("Item (1)").gameObject.GetComponent<Image>();
-        itemImage[2] = objChapter[chapNum].transform.FindChild("Item (2)").gameObject.GetComponent<Image>();
-        itemImage[3] = objChapter[chapNum].transform.FindChild("Item (3)").gameObject.GetComponent<Image>();
-        itemImage[4] = objChapter[chapNum].transform.FindChild("Item (4)").gameObject.GetComponent<Image>();
-        itemImage[5] = objChapter[chapNum].transform.FindChild("Item (5)").gameObject.GetComponent<Image>();
-        itemImage[6] = objChapter[chapNum].transform.FindChild("Item (6)").gameObject.GetComponent<Image>();
-        itemImage[7] = objChapter[chapNum].transform.FindChild("Item (7)").gameObject.GetComponent<Image>();
-        itemImage[8] = objChapter[chapNum].transform.FindChild("Item (8)").gameObject.GetComponent<Image>();
-
-        for (int i = 0; i < 9; i++)
-        {
-            // 구입여부에 따른 활성화
-            if (GameDataManager.Instance.userData.itemIsBuy[itemIndex + i])
-                itemImage[i].enabled = true;
-            else
-                itemImage[i].enabled = false;
-        }
-
-
-
+        
         // 버튼 활성화 설정
         moveButton[(int)Dir.East].SetActive(screenInfo.dir[(int)Dir.East]);
         moveButton[(int)Dir.West].SetActive(screenInfo.dir[(int)Dir.West]);
         moveButton[(int)Dir.North].SetActive(screenInfo.dir[(int)Dir.North]);
         moveButton[(int)Dir.South].SetActive(screenInfo.dir[(int)Dir.South]);
 
+        // 현재 페이지 저장
     }
 
     // 챕터 별 문열리는 순서
@@ -287,10 +269,37 @@ public class ScreenSystem : MonoBehaviour {
     }
     
     // 아이템을 샀을때
-    public void WhenBuyItem(int itemIndex)
+    public void WhenBuyItem()
     {
-        int i = itemIndex / 9;
-        SetScreen(screendata.chapterInfo[i]);
+        ItemUpdate();
+    }
+
+    // 아이템 갱신
+    void ItemUpdate()
+    {
+
+        int itemIndex = currentPage * 9;
+
+        // 아이템 관리
+        itemImage[0] = objChapter[currentPage].transform.FindChild("Item").gameObject.GetComponent<Image>();
+        itemImage[1] = objChapter[currentPage].transform.FindChild("Item (1)").gameObject.GetComponent<Image>();
+        itemImage[2] = objChapter[currentPage].transform.FindChild("Item (2)").gameObject.GetComponent<Image>();
+        itemImage[3] = objChapter[currentPage].transform.FindChild("Item (3)").gameObject.GetComponent<Image>();
+        itemImage[4] = objChapter[currentPage].transform.FindChild("Item (4)").gameObject.GetComponent<Image>();
+        itemImage[5] = objChapter[currentPage].transform.FindChild("Item (5)").gameObject.GetComponent<Image>();
+        itemImage[6] = objChapter[currentPage].transform.FindChild("Item (6)").gameObject.GetComponent<Image>();
+        itemImage[7] = objChapter[currentPage].transform.FindChild("Item (7)").gameObject.GetComponent<Image>();
+        itemImage[8] = objChapter[currentPage].transform.FindChild("Item (8)").gameObject.GetComponent<Image>();
+
+        for (int i = 0; i < 9; i++)
+        {
+            // 구입여부에 따른 활성화
+            if (GameDataManager.Instance.userData.itemIsBuy[itemIndex + i])
+                itemImage[i].enabled = true;
+            else
+                itemImage[i].enabled = false;
+        }
+
     }
 
     // 문열기

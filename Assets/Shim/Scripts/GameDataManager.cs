@@ -85,6 +85,7 @@ public class GameDataManager : MonoBehaviour {
 
         if (!itemData)
         {
+            print("Item Data : null");
             itemData = Resources.Load("ItemData") as DataItem;
         }
         if (!userData)
@@ -291,7 +292,7 @@ public class GameDataManager : MonoBehaviour {
             itemBuyPrice.text = "구매 완료";
 
             unlockSystem.WhenBuyItem(itemIndex);
-            screenSystem.WhenBuyItem(itemIndex);
+            screenSystem.WhenBuyItem();
         }
         else if (buyLocation == stageStore) // 스테이지 구매 창인가?
         {
@@ -342,7 +343,7 @@ public class GameDataManager : MonoBehaviour {
             itemBuyPrice.text = "구매 완료";
 
             unlockSystem.WhenBuyItem(itemIndex);
-            screenSystem.WhenBuyItem(itemIndex);
+            screenSystem.WhenBuyItem();
 
         }
         else if (buyLocation == stageStore) // 스테이지 구매 창인가?
@@ -424,6 +425,7 @@ public class GameDataManager : MonoBehaviour {
             userData.chapLock[i] = true;
         }
 
+        /*
         for (int i = 0; i < 9; i++)
         {
             screenSystem.screendata.chapterInfo[i].dir[0] = false;
@@ -431,6 +433,7 @@ public class GameDataManager : MonoBehaviour {
             screenSystem.screendata.chapterInfo[i].dir[2] = false;
             screenSystem.screendata.chapterInfo[i].dir[3] = false;
         }
+        */
         screenSystem.InitScreen();
     }
 

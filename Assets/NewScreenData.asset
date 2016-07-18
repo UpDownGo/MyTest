@@ -20,11 +20,11 @@ MonoBehaviour:
   - chapterImage: {fileID: 21300000, guid: 4ab8a2907ea3d9343a451762de6272af, type: 3}
     chapNum: 0
     chapObj: {fileID: 111248, guid: 301be16cffed019429d9db064470e122, type: 2}
-    dir: 00000000
+    dir: 00000001
   - chapterImage: {fileID: 21300000, guid: bc36465d594233543a7a841424362a18, type: 3}
     chapNum: 1
     chapObj: {fileID: 174666, guid: 6040791b2f251c040989370550507bd1, type: 2}
-    dir: 00000000
+    dir: 00000100
   - chapterImage: {fileID: 0}
     chapNum: 2
     chapObj: {fileID: 189834, guid: 45f3367f4abf71e47b5823506ed6061e, type: 2}
@@ -35,21 +35,21 @@ MonoBehaviour:
     dir: 00000000
   - chapterImage: {fileID: 0}
     chapNum: 4
-    chapObj: {fileID: 150182, guid: d9a5834860da644448ac8b7ce9f8dd88, type: 2}
+    chapObj: {fileID: 196342, guid: 6022b2cb14000b448aea68949e69fb2f, type: 2}
     dir: 00000000
   - chapterImage: {fileID: 0}
     chapNum: 5
-    chapObj: {fileID: 150182, guid: d9a5834860da644448ac8b7ce9f8dd88, type: 2}
+    chapObj: {fileID: 196342, guid: 6022b2cb14000b448aea68949e69fb2f, type: 2}
     dir: 00000000
   - chapterImage: {fileID: 0}
     chapNum: 6
-    chapObj: {fileID: 150182, guid: d9a5834860da644448ac8b7ce9f8dd88, type: 2}
+    chapObj: {fileID: 196342, guid: 6022b2cb14000b448aea68949e69fb2f, type: 2}
     dir: 00000000
   - chapterImage: {fileID: 0}
     chapNum: 7
-    chapObj: {fileID: 150182, guid: d9a5834860da644448ac8b7ce9f8dd88, type: 2}
+    chapObj: {fileID: 196342, guid: 6022b2cb14000b448aea68949e69fb2f, type: 2}
     dir: 00000000
   - chapterImage: {fileID: 0}
     chapNum: 8
-    chapObj: {fileID: 150182, guid: d9a5834860da644448ac8b7ce9f8dd88, type: 2}
+    chapObj: {fileID: 196342, guid: 6022b2cb14000b448aea68949e69fb2f, type: 2}
     dir: 00000000
