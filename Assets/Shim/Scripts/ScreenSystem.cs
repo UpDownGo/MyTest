@@ -123,25 +123,25 @@ public class ScreenSystem : MonoBehaviour {
         for (int i = 0; i < 9; i++)
         {
             int j = i * 9;
-            objChapter[i].transform.FindChild("Item").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j];
-            objChapter[i].transform.FindChild("Item (1)").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 1];
-            objChapter[i].transform.FindChild("Item (2)").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 2];
-            objChapter[i].transform.FindChild("Item (3)").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 3];
-            objChapter[i].transform.FindChild("Item (4)").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 4];
-            objChapter[i].transform.FindChild("Item (5)").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 5];
-            objChapter[i].transform.FindChild("Item (6)").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 6];
-            objChapter[i].transform.FindChild("Item (7)").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 7];
-            objChapter[i].transform.FindChild("Item (8)").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 8];
+            objChapter[i].transform.FindChild("Item 1-1").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j];
+            objChapter[i].transform.FindChild("Item 1-2").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 1];
+            objChapter[i].transform.FindChild("Item 1-3").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 2];
+            objChapter[i].transform.FindChild("Item 2-1").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 3];
+            objChapter[i].transform.FindChild("Item 2-2").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 4];
+            objChapter[i].transform.FindChild("Item 2-3").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 5];
+            objChapter[i].transform.FindChild("Item 3-1").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 6];
+            objChapter[i].transform.FindChild("Item 3-2").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 7];
+            objChapter[i].transform.FindChild("Item 3-3").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 8];
 
-            objChapter[i].transform.FindChild("Item").gameObject.GetComponent<Image>().enabled = false;
-            objChapter[i].transform.FindChild("Item (1)").gameObject.GetComponent<Image>().enabled = false;
-            objChapter[i].transform.FindChild("Item (2)").gameObject.GetComponent<Image>().enabled = false;
-            objChapter[i].transform.FindChild("Item (3)").gameObject.GetComponent<Image>().enabled = false;
-            objChapter[i].transform.FindChild("Item (4)").gameObject.GetComponent<Image>().enabled = false;
-            objChapter[i].transform.FindChild("Item (5)").gameObject.GetComponent<Image>().enabled = false;
-            objChapter[i].transform.FindChild("Item (6)").gameObject.GetComponent<Image>().enabled = false;
-            objChapter[i].transform.FindChild("Item (7)").gameObject.GetComponent<Image>().enabled = false;
-            objChapter[i].transform.FindChild("Item (8)").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 1-1").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 1-2").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 1-3").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 2-1").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 2-2").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 2-3").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 3-1").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 3-2").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 3-3").gameObject.GetComponent<Image>().enabled = false;
 
             objChapter[i].SetActive(false);
         }
@@ -281,15 +281,15 @@ public class ScreenSystem : MonoBehaviour {
         int itemIndex = currentPage * 9;
 
         // 아이템 관리
-        itemImage[0] = objChapter[currentPage].transform.FindChild("Item").gameObject.GetComponent<Image>();
-        itemImage[1] = objChapter[currentPage].transform.FindChild("Item (1)").gameObject.GetComponent<Image>();
-        itemImage[2] = objChapter[currentPage].transform.FindChild("Item (2)").gameObject.GetComponent<Image>();
-        itemImage[3] = objChapter[currentPage].transform.FindChild("Item (3)").gameObject.GetComponent<Image>();
-        itemImage[4] = objChapter[currentPage].transform.FindChild("Item (4)").gameObject.GetComponent<Image>();
-        itemImage[5] = objChapter[currentPage].transform.FindChild("Item (5)").gameObject.GetComponent<Image>();
-        itemImage[6] = objChapter[currentPage].transform.FindChild("Item (6)").gameObject.GetComponent<Image>();
-        itemImage[7] = objChapter[currentPage].transform.FindChild("Item (7)").gameObject.GetComponent<Image>();
-        itemImage[8] = objChapter[currentPage].transform.FindChild("Item (8)").gameObject.GetComponent<Image>();
+        itemImage[0] = objChapter[currentPage].transform.FindChild("Item 1-1").gameObject.GetComponent<Image>();
+        itemImage[1] = objChapter[currentPage].transform.FindChild("Item 1-2").gameObject.GetComponent<Image>();
+        itemImage[2] = objChapter[currentPage].transform.FindChild("Item 1-3").gameObject.GetComponent<Image>();
+        itemImage[3] = objChapter[currentPage].transform.FindChild("Item 2-1").gameObject.GetComponent<Image>();
+        itemImage[4] = objChapter[currentPage].transform.FindChild("Item 2-2").gameObject.GetComponent<Image>();
+        itemImage[5] = objChapter[currentPage].transform.FindChild("Item 2-3").gameObject.GetComponent<Image>();
+        itemImage[6] = objChapter[currentPage].transform.FindChild("Item 3-1").gameObject.GetComponent<Image>();
+        itemImage[7] = objChapter[currentPage].transform.FindChild("Item 3-2").gameObject.GetComponent<Image>();
+        itemImage[8] = objChapter[currentPage].transform.FindChild("Item 3-3").gameObject.GetComponent<Image>();
 
         for (int i = 0; i < 9; i++)
         {
