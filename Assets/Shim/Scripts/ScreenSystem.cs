@@ -183,14 +183,14 @@ public class ScreenSystem : MonoBehaviour {
             if (screendata.chapterInfo[i].chapObj == screenInfo.chapObj)
             {
                 objChapter[i].SetActive(true);
-                print("t :" + i);
+               // print("t :" + i);
                 currentPage = i;
             }
 
             else
             {
                 objChapter[i].SetActive(false);
-                print("f :" + i);
+               // print("f :" + i);
 
             }
         }
