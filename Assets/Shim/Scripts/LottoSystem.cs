@@ -7,7 +7,7 @@ using Random = UnityEngine.Random; 		//Tells Random to use the Unity Engine rand
 public class LottoSystem : MonoBehaviour
 {
 
-    class Lotto
+    class cLotto
     {
         string strName;
 
@@ -44,9 +44,9 @@ public class LottoSystem : MonoBehaviour
 
     int gambleIndex;
 
-    Lotto coinLotto = new Lotto();
-    Lotto diaLotto = new Lotto();
-    Lotto gambleLotto = new Lotto();
+    cLotto coinLotto = new cLotto();
+    cLotto diaLotto = new cLotto();
+    cLotto gambleLotto = new cLotto();
 
     public GameObject[] objPage = new GameObject[2];
 
@@ -54,6 +54,8 @@ public class LottoSystem : MonoBehaviour
     Text[] coinPrize = new Text[5];
     Text[] diaPrize = new Text[5];
     Text[] gamblePrize = new Text[5];
+
+    public scLotto scLotto;
 
     void Awake()
     {                                                      
@@ -180,7 +182,19 @@ public class LottoSystem : MonoBehaviour
             case ShowResult.Finished:
                 Debug.Log("The ad was successfully shown.");
 
-                objPage[gambleIndex].SetActive(true);
+                if (gambleIndex == 1)
+                    objPage[1].SetActive(true);
+                else if (gambleIndex == 0)
+                {
+                    objPage[0].SetActive(true);
+                    scLotto.GambleInit(coinLotto.GetFirstPrize(), coinLotto.GetSecondPrize(), coinLotto.GetThirdPrize(),false);
+                }
+
+                else if (gambleIndex == 2)
+                {
+                    objPage[0].SetActive(true);
+                    scLotto.GambleInit(diaLotto.GetFirstPrize(), diaLotto.GetSecondPrize(), diaLotto.GetThirdPrize(),true);
+                }
 
                 //
                 // YOUR CODE TO REWARD THE GAMER

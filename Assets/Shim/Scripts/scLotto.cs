@@ -4,9 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Random = UnityEngine.Random; 		//Tells Random to use the Unity Engine random number generator.
 
-public class Lotto : MonoBehaviour {
+public class scLotto : MonoBehaviour {
 
     public Sprite imagePick;
+    public Sprite imageYesPick;
     public Sprite imageNoPick;
 
     List<int> listPick = new List<int>();
@@ -17,19 +18,32 @@ public class Lotto : MonoBehaviour {
 
     Button[] btnSelectNum = new Button[10];
     Button[] btnGambleNum = new Button[2];
+    Button btnGetPrize;
 
     bool[] isNumPick = new bool[10];
     bool[] isGamblePick = new bool[2];
     bool[] isWin = new bool[2];
+    bool isDiaLotto;
+
+    Text pirzeText;
+
+    int[] pirzeReward = new int[3];
 
     bool isStart = false;
 
     int rankings = 0;
 
-    public void GambleInit()
+    public void GambleInit(int _first, int _sec, int _third, bool _kind)
     {
+        isDiaLotto = _kind;
+        pirzeReward[0] = _third;
+        pirzeReward[1] = _sec;
+        pirzeReward[2] = _first;
+
         listPick.Clear();
         listGambleNum.Clear();
+
+        pirzeText.text = "? ? ?";
 
         isStart = false;
 
@@ -37,11 +51,14 @@ public class Lotto : MonoBehaviour {
         {
             isGamblePick[i] = false;
             isWin[i] = false;
+            objGamble[i].GetComponent<Image>().sprite = imageNoPick;
+
         }
 
         for (int i = 0; i < 10; i++)
         {
             isNumPick[i] = false;
+            objSelect[i].GetComponent<Image>().sprite = imageNoPick;
         }
 
         NumGenerator();
@@ -49,6 +66,10 @@ public class Lotto : MonoBehaviour {
 
     void Awake()
     {
+        btnGetPrize = transform.FindChild("Btn_GetPrize").gameObject.GetComponent<Button>();
+        btnGetPrize.onClick.AddListener(delegate() { GetPrize(); });
+
+
         objGamble[0] = transform.FindChild("First_Num").gameObject;
         objGamble[1] = transform.FindChild("Second_Num").gameObject;
 
@@ -90,11 +111,18 @@ public class Lotto : MonoBehaviour {
         btnSelectNum[7].onClick.AddListener(() => { PickNum(7); });
         btnSelectNum[8].onClick.AddListener(() => { PickNum(8); });
         btnSelectNum[9].onClick.AddListener(() => { PickNum(9); });
+
+
+        // 상품 텍스트
+        pirzeText = transform.FindChild("Prize").FindChild("Text").gameObject.GetComponent<Text>();
+        pirzeText.text = "? ? ?";
     }
+
     void Start()
     {
-        GambleInit();
+        GambleInit(100000, 10000, 1000,false);
     }
+
     // 픽 버튼 함수
     void PickNum(int _index)
     {
@@ -154,14 +182,14 @@ public class Lotto : MonoBehaviour {
         // 번호에 따른 배경 화면 변경
         if (listPick.Exists(delegate (int pick) { return pick == listGambleNum[_index]; }))
         {
-            objGamble[_index].GetComponent<Image>().sprite = imagePick;
+            objGamble[_index].GetComponent<Image>().sprite = imageYesPick;
             isWin[_index] = true;
             Debug.Log("같은 번호가 있다.");
 
         }
         else
         {
-            objGamble[_index].GetComponent<Image>().sprite = imageNoPick;
+            objGamble[_index].GetComponent<Image>().sprite = imagePick;
             isWin[_index] = false;
             Debug.Log("같은 번호가 없다.");
 
@@ -187,15 +215,19 @@ public class Lotto : MonoBehaviour {
     {
         if (listGambleNum.Count == 2)
             return;
-        if (listGambleNum.Equals(Random.Range(0, 9)))
-        {
+
+        int num = Random.Range(0, 9);
+
+        if (listGambleNum.Exists(delegate (int pick) { return pick == num; }))
+        { 
             RandomNum();
             return;
         }            
-        listGambleNum.Add(Random.Range(0, 9));
-    }
-    // Use this for initialization
 
+        listGambleNum.Add(num);
+    }
+
+    // 상금 체크
     void CheckWin()
     {
         int price = 0;
@@ -207,6 +239,31 @@ public class Lotto : MonoBehaviour {
         }
 
         rankings = price;
+                
         Debug.Log("rankings : " + rankings);
+        if (isDiaLotto)
+            pirzeText.text = pirzeReward[price].ToString() + " D";
+        else
+            pirzeText.text = pirzeReward[price].ToString() + " C";
+    }
+
+    // 상금 얻기
+    void GetPrize()
+    {
+        Debug.Log("도박은 위험해!");
+        if (isGamblePick[0] == true && isGamblePick[1] == true)
+        {
+            if (isDiaLotto)
+            {
+                GameDataManager.Instance.userData.currentDia += pirzeReward[rankings];
+                GameDataManager.Instance.UpdateText();
+            }
+            else
+            {
+                GameDataManager.Instance.userData.currentCoin += pirzeReward[rankings];
+                GameDataManager.Instance.UpdateText();
+            }
+            gameObject.SetActive(false);
+        }
     }
 }
