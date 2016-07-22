@@ -5,20 +5,16 @@ using UnityEngine.UI;
 public enum Dir { East, West, North, South }
 
 public class ScreenSystem : MonoBehaviour {
-    [System.Serializable]
-    public class ItemBtn
-    {
-        public GameObject[] itemButton;
-
-    }
-
-    public GameObject objChapter;
-
-    public GameObject mainSprite;
-    
+    public GameObject superChapter;
     public GameObject[] moveButton;
-    public ItemBtn[] itemButton;
     public DataScreem screendata;
+
+    int currentPage;
+
+    GameObject[] objChapter = new GameObject[9];
+    Image[] itemImage = new Image[9];
+
+
 
     ScreenInfo currChapter = null;
 
@@ -26,9 +22,17 @@ public class ScreenSystem : MonoBehaviour {
     {
         if (!screendata)
         {
-            screendata = Resources.Load("ScreenData") as DataScreem;
+            screendata = Resources.Load("NewScreenData") as DataScreem;
         }
 
+        InitDir();
+        InitChapterOBJ();
+        InitItemImage();
+    }
+
+    // 방향 설정
+    void InitDir()
+    {  
         // 챕터 연결 정보 설정
         screendata.chapterInfo[0].dirInfo[(int)Dir.East] = null;
         screendata.chapterInfo[0].dirInfo[(int)Dir.West] = screendata.chapterInfo[6];
@@ -75,7 +79,7 @@ public class ScreenSystem : MonoBehaviour {
         screendata.chapterInfo[8].dirInfo[(int)Dir.North] = screendata.chapterInfo[7];
         screendata.chapterInfo[8].dirInfo[(int)Dir.South] = null;
 
-        for(int i = 0; i < 9; i++)
+        for (int i = 0; i < 9; i++)
         {
             screendata.chapterInfo[i].dir[0] = false;
             screendata.chapterInfo[i].dir[1] = false;
@@ -83,23 +87,81 @@ public class ScreenSystem : MonoBehaviour {
             screendata.chapterInfo[i].dir[3] = false;
         }
 
-        currChapter = screendata.chapterInfo[0];    
     }
+
+    // 챕터 Obj 생성
+    void InitChapterOBJ()
+    {
+
+        for(int i = 0; i < 9; i++)
+        {
+            objChapter[i] = Instantiate(screendata.chapterInfo[i].chapObj);
+            objChapter[i].transform.SetParent(superChapter.transform);
+            objChapter[i].GetComponent<RectTransform>().localPosition = new Vector3(0f, 0f, 0f);
+            objChapter[i].GetComponent<RectTransform>().localScale = new Vector3(1f, 1f, 1f);
+        }
+
+
+       /*
+        objChapter[0] = superChapter.transform.FindChild("Chapter01").gameObject;
+        objChapter[1] = superChapter.transform.FindChild("Chapter02").gameObject;
+        objChapter[2] = superChapter.transform.FindChild("Chapter03").gameObject;
+        objChapter[3] = superChapter.transform.FindChild("Chapter04").gameObject;
+        objChapter[4] = superChapter.transform.FindChild("Chapter05").gameObject;
+        objChapter[5] = superChapter.transform.FindChild("Chapter06").gameObject;
+        objChapter[6] = superChapter.transform.FindChild("Chapter07").gameObject;
+        objChapter[7] = superChapter.transform.FindChild("Chapter08").gameObject;
+        objChapter[8] = superChapter.transform.FindChild("Chapter09").gameObject;
+
+        */
+    }
+
+
+    // 챕터 아이템 이미지 데이터 입력
+    void InitItemImage()
+    {
+        for (int i = 0; i < 9; i++)
+        {
+            int j = i * 9;
+            objChapter[i].transform.FindChild("Item 1-1").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j];
+            objChapter[i].transform.FindChild("Item 1-2").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 1];
+            objChapter[i].transform.FindChild("Item 1-3").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 2];
+            objChapter[i].transform.FindChild("Item 2-1").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 3];
+            objChapter[i].transform.FindChild("Item 2-2").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 4];
+            objChapter[i].transform.FindChild("Item 2-3").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 5];
+            objChapter[i].transform.FindChild("Item 3-1").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 6];
+            objChapter[i].transform.FindChild("Item 3-2").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 7];
+            objChapter[i].transform.FindChild("Item 3-3").gameObject.GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j+ 8];
+
+            objChapter[i].transform.FindChild("Item 1-1").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 1-2").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 1-3").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 2-1").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 2-2").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 2-3").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 3-1").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 3-2").gameObject.GetComponent<Image>().enabled = false;
+            objChapter[i].transform.FindChild("Item 3-3").gameObject.GetComponent<Image>().enabled = false;
+
+            objChapter[i].SetActive(false);
+        }
+    }
+
 
     void Start()
     {
-
-        // OpenGate((int)Dir.South, screendata.chapterInfo[0], screendata.chapterInfo[1]);
+        
+        // 스크린 설정
+        currChapter = screendata.chapterInfo[0];        
+        
+        // 스크린 방항 정보 셋팅
         for (int i = 0; i < 9; i++)
         {
-            if (GameDataManager.Instance.userData.chapIsBuy[i])
-            {
-                WhenBuyChapter(i);
-            }
+            if (GameDataManager.Instance.userData.chapIsBuy[i])            
+                WhenBuyChapter(i);                    
         }
 
         SetScreen(currChapter);
-
     }
 
     public void HomeScreen()
@@ -112,85 +174,38 @@ public class ScreenSystem : MonoBehaviour {
     }
 
 
-
-    void ScreenInit()
+    void SetScreen(ScreenInfo screenInfo)
     {
-        /*
-        for (int i = 0; i < 9; i++)
+        // 메인 스테이지 엑티브
+
+        for (int i = 0; i < objChapter.Length; i++)
         {
-            int j = i * 9;
-            screendata.chapterInfo[i].chapObj.transform.FindChild("item").GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j];
-            screendata.chapterInfo[i].chapObj.transform.FindChild("Item (1)").GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j + 1];
-            screendata.chapterInfo[i].chapObj.transform.FindChild("Item (2)").GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j + 2];
-            screendata.chapterInfo[i].chapObj.transform.FindChild("Item (3)").GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j + 3];
-            screendata.chapterInfo[i].chapObj.transform.FindChild("Item (4)").GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j + 4];
-            screendata.chapterInfo[i].chapObj.transform.FindChild("Item (5)").GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j + 5];
-            screendata.chapterInfo[i].chapObj.transform.FindChild("Item (6)").GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j + 6];
-            screendata.chapterInfo[i].chapObj.transform.FindChild("Item (7)").GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j + 7];
-            screendata.chapterInfo[i].chapObj.transform.FindChild("Item (8)").GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[j + 8];
+            if (screendata.chapterInfo[i].chapObj == screenInfo.chapObj)
+            {
+                objChapter[i].SetActive(true);
+               // print("t :" + i);
+                currentPage = i;
+            }
 
-        }
-        */
-    }
+            else
+            {
+                objChapter[i].SetActive(false);
+               // print("f :" + i);
 
-    void SetScreen(ScreenInfo currScreen)
-    {
-        // 메인 이미지 변경
-        mainSprite.GetComponent<Image>().sprite = currScreen.chapterImage;
-
-        int itemIndex = currScreen.chapNum * 9;
-
-        // 아이템 이미지와 위치 변경
-        for (int i = 0; i < 9; i++)
-        {
-            // 아이템 스프라이트 입력
-            //itemButton[i].GetComponent<Image>().sprite = GameDataManager.Instance.itemData.itemImage[itemIndex + i];
-            
-            // 아이템 위치 입력
-           // itemButton[i].GetComponent<RectTransform>().localPosition = currScreen.v_ItemLocation[i];
-            
-            // 구입여부에 따른 활성화
-            //if (GameDataManager.Instance.userData.itemIsBuy[itemIndex + i])
-            //    itemButton[i].SetActive(true);
-          //  else
-           //     itemButton[i].SetActive(false);
+            }
         }
 
-       
+        ItemUpdate();
+
+        
         // 버튼 활성화 설정
-        moveButton[(int)Dir.East].SetActive(currScreen.dir[(int)Dir.East]);
-        moveButton[(int)Dir.West].SetActive(currScreen.dir[(int)Dir.West]);
-        moveButton[(int)Dir.North].SetActive(currScreen.dir[(int)Dir.North]);
-        moveButton[(int)Dir.South].SetActive(currScreen.dir[(int)Dir.South]);
-       
+        moveButton[(int)Dir.East].SetActive(screenInfo.dir[(int)Dir.East]);
+        moveButton[(int)Dir.West].SetActive(screenInfo.dir[(int)Dir.West]);
+        moveButton[(int)Dir.North].SetActive(screenInfo.dir[(int)Dir.North]);
+        moveButton[(int)Dir.South].SetActive(screenInfo.dir[(int)Dir.South]);
+
+        // 현재 페이지 저장
     }
-
-    // 이동 함수
-    public void MoveNorth()
-    {
-        currChapter = currChapter.dirInfo[(int)Dir.North];
-        SetScreen(currChapter);
-
-    }
-    public void MoveSouth()
-    {
-        currChapter = currChapter.dirInfo[(int)Dir.South];
-
-        SetScreen(currChapter);
-    }
-    public void MoveEast()
-    {
-        currChapter = currChapter.dirInfo[(int)Dir.East];
-
-        SetScreen(currChapter);
-    }
-    public void MoveWest()
-    {
-        currChapter = currChapter.dirInfo[(int)Dir.West];
-
-        SetScreen(currChapter);
-    }
-
 
     // 챕터 별 문열리는 순서
     public void WhenBuyChapter(int chapterLevel)
@@ -249,14 +264,42 @@ public class ScreenSystem : MonoBehaviour {
                     break;
                 }
         }
+
         SetScreen(currChapter);
     }
     
     // 아이템을 샀을때
-    public void WhenBuyItem(int itemIndex)
+    public void WhenBuyItem()
     {
-        int index = itemIndex % 9;
-       // itemButton[index].SetActive(true);
+        ItemUpdate();
+    }
+
+    // 아이템 갱신
+    void ItemUpdate()
+    {
+
+        int itemIndex = currentPage * 9;
+
+        // 아이템 관리
+        itemImage[0] = objChapter[currentPage].transform.FindChild("Item 1-1").gameObject.GetComponent<Image>();
+        itemImage[1] = objChapter[currentPage].transform.FindChild("Item 1-2").gameObject.GetComponent<Image>();
+        itemImage[2] = objChapter[currentPage].transform.FindChild("Item 1-3").gameObject.GetComponent<Image>();
+        itemImage[3] = objChapter[currentPage].transform.FindChild("Item 2-1").gameObject.GetComponent<Image>();
+        itemImage[4] = objChapter[currentPage].transform.FindChild("Item 2-2").gameObject.GetComponent<Image>();
+        itemImage[5] = objChapter[currentPage].transform.FindChild("Item 2-3").gameObject.GetComponent<Image>();
+        itemImage[6] = objChapter[currentPage].transform.FindChild("Item 3-1").gameObject.GetComponent<Image>();
+        itemImage[7] = objChapter[currentPage].transform.FindChild("Item 3-2").gameObject.GetComponent<Image>();
+        itemImage[8] = objChapter[currentPage].transform.FindChild("Item 3-3").gameObject.GetComponent<Image>();
+
+        for (int i = 0; i < 9; i++)
+        {
+            // 구입여부에 따른 활성화
+            if (GameDataManager.Instance.userData.itemIsBuy[itemIndex + i])
+                itemImage[i].enabled = true;
+            else
+                itemImage[i].enabled = false;
+        }
+
     }
 
     // 문열기
@@ -270,6 +313,8 @@ public class ScreenSystem : MonoBehaviour {
 
                     nextScreen.dir[(int)Dir.West] = true;
 
+                    currChapter = nextScreen;
+
                     break;
                 }
             case (int)Dir.West:
@@ -277,6 +322,9 @@ public class ScreenSystem : MonoBehaviour {
                     currScreen.dir[(int)Dir.West] = true;
 
                     nextScreen.dir[(int)Dir.East] = true;
+
+                    currChapter = nextScreen;
+
                     break;
                 }
             case (int)Dir.North:
@@ -284,6 +332,9 @@ public class ScreenSystem : MonoBehaviour {
                     currScreen.dir[(int)Dir.North] = true;
 
                     nextScreen.dir[(int)Dir.South] = true;
+
+                    currChapter = nextScreen;
+
                     break;
                 }
             case (int)Dir.South:
@@ -291,9 +342,39 @@ public class ScreenSystem : MonoBehaviour {
                     currScreen.dir[(int)Dir.South] = true;
 
                     nextScreen.dir[(int)Dir.North] = true;
+
+                    currChapter = nextScreen;
+
                     break;
                 }
         }
     }
+
+    // 이동 함수
+    public void MoveNorth()
+    {
+        currChapter = currChapter.dirInfo[(int)Dir.North];
+        SetScreen(currChapter);
+
+    }
+    public void MoveSouth()
+    {
+        currChapter = currChapter.dirInfo[(int)Dir.South];
+
+        SetScreen(currChapter);
+    }
+    public void MoveEast()
+    {
+        currChapter = currChapter.dirInfo[(int)Dir.East];
+
+        SetScreen(currChapter);
+    }
+    public void MoveWest()
+    {
+        currChapter = currChapter.dirInfo[(int)Dir.West];
+
+        SetScreen(currChapter);
+    }
+
 }
 

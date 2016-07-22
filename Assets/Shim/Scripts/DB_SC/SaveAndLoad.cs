@@ -116,8 +116,8 @@ public class SaveAndLoad : MonoBehaviour
             itemBuy = PlayerPrefs.GetString(strItemBuy).Split(',');
             itemLock = PlayerPrefs.GetString(strItemLock).Split(',');
 
-            print("Item IsBuy : " + PlayerPrefs.GetString(strItemBuy) + " \n\n");
-            print("Item Lock : " + PlayerPrefs.GetString(strItemLock) + " \n\n");
+           // print("Item IsBuy : " + PlayerPrefs.GetString(strItemBuy) + " \n\n");
+           // print("Item Lock : " + PlayerPrefs.GetString(strItemLock) + " \n\n");
 
             for (int i = 0; i < GameDataManager.Instance.itemData.itemName.Length; i++)
             {
@@ -136,8 +136,8 @@ public class SaveAndLoad : MonoBehaviour
             stageBuy = PlayerPrefs.GetString(strStageBuy).Split(',');
             stageLock = PlayerPrefs.GetString(strStageLock).Split(',');
 
-            print("Stage IsBuy : " + PlayerPrefs.GetString(strStageBuy) + " \n\n");
-            print("Stage Lock : " + PlayerPrefs.GetString(strStageLock) + " \n\n");
+           // print("Stage IsBuy : " + PlayerPrefs.GetString(strStageBuy) + " \n\n");
+           // print("Stage Lock : " + PlayerPrefs.GetString(strStageLock) + " \n\n");
 
             for (int i = 0; i < GameDataManager.Instance.itemData.stageName.Length; i++)
             {
@@ -168,8 +168,8 @@ public class SaveAndLoad : MonoBehaviour
         GameDataManager.Instance.userData.currentCoin = PlayerPrefs.GetInt(strCoin);
         GameDataManager.Instance.userData.currentDia = PlayerPrefs.GetInt(strDia);
 
-        print(PlayerPrefs.GetInt(strCoin));
-        print(PlayerPrefs.GetInt(strDia));
+       // print(PlayerPrefs.GetInt(strCoin));
+      //  print(PlayerPrefs.GetInt(strDia));
 
 
         if (PlayerPrefs.GetString(strHitPoint) != "")

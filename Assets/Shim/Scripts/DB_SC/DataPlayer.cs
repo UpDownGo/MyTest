@@ -8,7 +8,9 @@ public class DataPlayer : ScriptableObject
 {
     public int currentCoin;
     public int currentDia;
+    public int currentChapter;
     public float boxSpeed;
+
 
     public int[] hitPoint = new int[4];
 

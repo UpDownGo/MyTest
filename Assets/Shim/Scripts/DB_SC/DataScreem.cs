@@ -5,14 +5,12 @@ using System.Collections;
 [CreateAssetMenu(fileName = "Screen", menuName = "DB/Chapter", order = 3)]
 public class DataScreem : ScriptableObject
 {
-    public ScreenInfo currChapter = null;
     public ScreenInfo[] chapterInfo = new ScreenInfo[9];
 }
 
 [System.Serializable]
 public class ScreenInfo
 {
-    public Sprite chapterImage;
     public int chapNum;
     public GameObject chapObj;
    // public Vector3[] v_ItemLocation = new Vector3[9];
