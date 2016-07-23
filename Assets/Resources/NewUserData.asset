@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c78c8f6b29c0fe40bd7772d78727203, type: 3}
   m_Name: NewUserData
   m_EditorClassIdentifier: 
-  currentCoin: 600000
+  currentCoin: 763916
   currentDia: 6000
   currentChapter: 0
   boxSpeed: 2

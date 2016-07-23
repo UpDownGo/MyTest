@@ -48,17 +48,30 @@ public class LottoSystem : MonoBehaviour
     cLotto diaLotto = new cLotto();
     cLotto gambleLotto = new cLotto();
 
-    public GameObject[] objPage = new GameObject[2];
+    GameObject[] objPage = new GameObject[2];
+    GameObject noMorePage ;
 
-    public GameObject[] objLotto = new GameObject[3];
+    GameObject[] objLotto = new GameObject[3];
     Text[] coinPrize = new Text[5];
     Text[] diaPrize = new Text[5];
     Text[] gamblePrize = new Text[5];
 
-    public scLotto scLotto;
+    scLotto scLotto;
+    scGamble scGamble;
 
     void Awake()
-    {                                                      
+    {
+        noMorePage = gameObject.transform.parent.parent.parent.parent.FindChild("Layer_2_NoAds").gameObject;
+        objPage[0] = gameObject.transform.parent.parent.parent.parent.FindChild("Layer_3_Lotto").gameObject;
+        objPage[1] = gameObject.transform.parent.parent.parent.parent.FindChild("Layer_3_Gamble").gameObject;
+
+        scLotto = gameObject.transform.parent.parent.parent.parent.FindChild("Layer_3_Lotto").gameObject.GetComponent<scLotto>();
+        scGamble = gameObject.transform.parent.parent.parent.parent.FindChild("Layer_3_Gamble").gameObject.GetComponent<scGamble>();
+
+        objLotto[0] = gameObject.transform.FindChild("Lottery (1)").gameObject;
+        objLotto[1] = gameObject.transform.FindChild("Lottery (2)").gameObject;
+        objLotto[2] = gameObject.transform.FindChild("Lottery (3)").gameObject;
+
         coinPrize[0] = objLotto[0].transform.FindChild("1stPrizeText").GetComponent<Text>();
         coinPrize[1] = objLotto[0].transform.FindChild("2ndPrizeText").GetComponent<Text>();
         coinPrize[2] = objLotto[0].transform.FindChild("3rdPrizeText").GetComponent<Text>();
@@ -86,16 +99,7 @@ public class LottoSystem : MonoBehaviour
         TextUpdate();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
-    
-    void GetCoinGamble()
-    {
-
-    }
     // 상금 초기화
     void PrizeInit()
     {
@@ -171,6 +175,7 @@ public class LottoSystem : MonoBehaviour
         }
         else
         {
+            noMorePage.SetActive(true);
             Debug.Log("No more rewarded at UnityAds.");
         }
     }
@@ -182,18 +187,22 @@ public class LottoSystem : MonoBehaviour
             case ShowResult.Finished:
                 Debug.Log("The ad was successfully shown.");
 
-                if (gambleIndex == 1)
-                    objPage[1].SetActive(true);
-                else if (gambleIndex == 0)
+                if (gambleIndex == 0) // 다이아
                 {
                     objPage[0].SetActive(true);
-                    scLotto.GambleInit(coinLotto.GetFirstPrize(), coinLotto.GetSecondPrize(), coinLotto.GetThirdPrize(),false);
+                    scLotto.GambleInit(diaLotto.GetFirstPrize(), diaLotto.GetSecondPrize(), diaLotto.GetThirdPrize(), true);
+                }                    
+                else if (gambleIndex == 1)
+                {
+                    objPage[1].SetActive(true);
+
+                    scGamble.InitGambel(PrizeGenerator(5000,10000));
                 }
 
                 else if (gambleIndex == 2)
                 {
                     objPage[0].SetActive(true);
-                    scLotto.GambleInit(diaLotto.GetFirstPrize(), diaLotto.GetSecondPrize(), diaLotto.GetThirdPrize(),true);
+                    scLotto.GambleInit(coinLotto.GetFirstPrize(), coinLotto.GetSecondPrize(), coinLotto.GetThirdPrize(),false);
                 }
 
                 //

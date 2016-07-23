@@ -6,9 +6,9 @@ using Random = UnityEngine.Random; 		//Tells Random to use the Unity Engine rand
 
 public class scLotto : MonoBehaviour {
 
-    public Sprite imagePick;
-    public Sprite imageYesPick;
-    public Sprite imageNoPick;
+    Sprite imagePick;
+    Sprite imageYesPick;
+    Sprite imageNoPick;
 
     List<int> listPick = new List<int>();
     List<int> listGambleNum = new List<int>();
@@ -33,9 +33,9 @@ public class scLotto : MonoBehaviour {
 
     int rankings = 0;
 
-    public void GambleInit(int _first, int _sec, int _third, bool _kind)
+    public void GambleInit(int _first, int _sec, int _third, bool _isDia)
     {
-        isDiaLotto = _kind;
+        isDiaLotto = _isDia;
         pirzeReward[0] = _third;
         pirzeReward[1] = _sec;
         pirzeReward[2] = _first;
@@ -66,6 +66,11 @@ public class scLotto : MonoBehaviour {
 
     void Awake()
     {
+
+        imagePick = Resources.Load("Images/Btn_Blue.png") as Sprite;
+        imageYesPick = Resources.Load("Images/Btn_Red.png") as Sprite;
+        imageNoPick = Resources.Load("Images/Btn_Black.png") as Sprite;
+
         btnGetPrize = transform.FindChild("Btn_GetPrize").gameObject.GetComponent<Button>();
         btnGetPrize.onClick.AddListener(delegate() { GetPrize(); });
 

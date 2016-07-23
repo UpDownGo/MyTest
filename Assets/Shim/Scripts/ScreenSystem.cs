@@ -5,9 +5,10 @@ using UnityEngine.UI;
 public enum Dir { East, West, North, South }
 
 public class ScreenSystem : MonoBehaviour {
-    public GameObject superChapter;
-    public GameObject[] moveButton;
-    public DataScreem screendata;
+    GameObject superChapter;
+    GameObject[] moveButton = new GameObject[4];
+    Button[] btnMove = new Button[4];
+    DataScreem screendata ;
 
     int currentPage;
 
@@ -24,6 +25,25 @@ public class ScreenSystem : MonoBehaviour {
         {
             screendata = Resources.Load("NewScreenData") as DataScreem;
         }
+
+        superChapter = gameObject.transform.FindChild("Layer_0_Main").FindChild("Chapter").gameObject;
+        moveButton[(int)Dir.East] = gameObject.transform.FindChild("Layer_0_Main").FindChild("East_Btn").gameObject;
+        moveButton[(int)Dir.West] = gameObject.transform.FindChild("Layer_0_Main").FindChild("West_Btn").gameObject;
+        moveButton[(int)Dir.North] = gameObject.transform.FindChild("Layer_0_Main").FindChild("North_Btn").gameObject;
+        moveButton[(int)Dir.South] = gameObject.transform.FindChild("Layer_0_Main").FindChild("South_Btn").gameObject;
+
+        btnMove[(int)Dir.East] = moveButton[(int)Dir.East].GetComponent<Button>();
+        btnMove[(int)Dir.West] = moveButton[(int)Dir.West].GetComponent<Button>();
+        btnMove[(int)Dir.North] = moveButton[(int)Dir.North].GetComponent<Button>();
+        btnMove[(int)Dir.South] = moveButton[(int)Dir.South].GetComponent<Button>();
+
+        btnMove[(int)Dir.East].onClick.AddListener(() => { MoveEast(); });
+        btnMove[(int)Dir.West].onClick.AddListener(() => { MoveWest(); });
+        btnMove[(int)Dir.North].onClick.AddListener(() => { MoveNorth(); });
+        btnMove[(int)Dir.South].onClick.AddListener(() => { MoveSouth(); });
+
+
+        screendata = Resources.Load("NewScreenData") as DataScreem;
 
         InitDir();
         InitChapterOBJ();

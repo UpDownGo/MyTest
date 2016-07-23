@@ -14,10 +14,10 @@ MonoBehaviour:
   chapterInfo:
   - chapNum: 0
     chapObj: {fileID: 109708, guid: 7ef57bfbee1845d45853baa9fdf7a97f, type: 2}
-    dir: 00000000
+    dir: 00000001
   - chapNum: 1
     chapObj: {fileID: 124364, guid: 6040791b2f251c040989370550507bd1, type: 2}
-    dir: 00000000
+    dir: 00000100
   - chapNum: 2
     chapObj: {fileID: 159568, guid: fd3251eeb4745d348b0ece69eb2f3ce2, type: 2}
     dir: 00000000

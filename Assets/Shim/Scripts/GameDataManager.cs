@@ -69,6 +69,8 @@ public class GameDataManager : MonoBehaviour {
 
     void Awake()
     {
+
+
         // 초기화하면서 인스턴스 정보 저장
         if (_instance == null)
         {
@@ -83,15 +85,10 @@ public class GameDataManager : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        if (!itemData)
-        {
-            print("Item Data : null");
-            itemData = Resources.Load("ItemData") as DataItem;
-        }
-        if (!userData)
-        {
-            userData = Resources.Load("UserData") as DataPlayer;
-        }
+        //screenSystem = GameObject.Find("ScreenCanvas").GetComponent<ScreenSystem>();
+
+        itemData = Resources.Load("NewItemData") as DataItem;
+        userData = Resources.Load("NewUserData") as DataPlayer;
 
         if (!saveAndLoad)
         {
