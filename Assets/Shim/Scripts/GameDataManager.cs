@@ -106,6 +106,7 @@ public class GameDataManager : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+
         saveAndLoad.LoadDB();
 
         SetData();

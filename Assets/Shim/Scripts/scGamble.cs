@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using Random = UnityEngine.Random; 		//Tells Random to use the Unity Engine random number generator.
 
 public class scGamble : MonoBehaviour {
-    Sprite spriteBlack;
-    Sprite spriteBlue;
-    Sprite spriteRed;
+    public Sprite spriteBlack;
+    public Sprite spriteBlue;
+    public Sprite spriteRed;
 
 
     Button[] btnPickNum = new Button[2];
@@ -33,9 +33,9 @@ public class scGamble : MonoBehaviour {
     void Awake()
     {
 
-        spriteBlack = Resources.Load("Btn_Black", typeof(Sprite)) as Sprite;
-        spriteBlue = Resources.Load("Images/Btn_Blue") as Sprite;
-        spriteRed = Resources.Load("Images/Btn_Red") as Sprite;        
+       // spriteBlack = Resources.Load("Btn_Black", typeof(Sprite)) as Sprite;
+       // spriteBlue = Resources.Load("Images/Btn_Blue") as Sprite;
+       // spriteRed = Resources.Load("Images/Btn_Red") as Sprite;        
 
         objPickNum[1] = transform.FindChild("Odd_Num").gameObject;
         objPickNum[0] = transform.FindChild("Even_Num").gameObject;
