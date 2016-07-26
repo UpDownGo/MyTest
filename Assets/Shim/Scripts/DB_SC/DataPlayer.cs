@@ -22,4 +22,8 @@ public class DataPlayer : ScriptableObject
 
     public bool[] chapIsBuy = new bool[9];
     public bool[] chapLock = new bool[9];
+
+    public float[] saveBallCoolTime = new float[3];
+    public int[] saveBalltype;    
+    public float[] saveBallDestroyTime;
 }

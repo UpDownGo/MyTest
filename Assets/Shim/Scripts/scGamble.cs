@@ -84,7 +84,13 @@ public class scGamble : MonoBehaviour {
     {
         if (!isCheckGambleNum)
             return;
+
+
+        /// 받는 로직이 없다
+
+
         GameDataManager.Instance.userData.currentCoin += prizeReward;
+        GameDataManager.Instance.UpdateText();
         gameObject.SetActive(false);
     }
 
